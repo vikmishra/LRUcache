@@ -70,7 +70,7 @@ public class LRUCache {
         }else{
             Node created = new Node(key, value);
             if(map.size()>=capacity){
-            	FileUtils.writeToFile(end); //Write the content to the file
+            	FileUtils.writeToFile(end); //Write the content to the file CHECK
                 map.remove(end.key);
                 remove(end);
                 
